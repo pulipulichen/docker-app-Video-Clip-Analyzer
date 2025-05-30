@@ -1,0 +1,31 @@
+{
+  "name": "docker-app-Video-Clip-Analyzer",
+  "version": "1.0.0",
+  "description": "A Docker application for analyzing video highlight clips.",
+  "main": "index.js",
+  "scripts": {
+    "start": "docker-compose up --build",
+    "up": "docker-compose up",
+    "commit-docker-image": "docker-compose build; bash ./docker-build/image/commit-docker-image.sh",
+    "d0.build": "docker-compose build",
+    "d1.bash": "docker-compose run app bash",
+    "update": "node update.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/docker-app-Video-Clip-Analyzer.git"
+  },
+  "keywords": [
+    "PWA"
+  ],
+  "author": "Pulipuli Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pulipulichen/docker-app-Video-Clip-Analyzer/issues"
+  },
+  "homepage": "https://github.com/pulipulichen/docker-app-Video-Clip-Analyzer#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
